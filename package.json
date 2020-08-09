@@ -1,0 +1,25 @@
+{
+  "name": "parcel-plugin-gas-imports",
+  "version": "1.0.0",
+  "description": "Parcel plugin that enables bundling of Google App Script HTML.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "gas",
+    "google apps script"
+  ],
+  "author": "Vladimir Mikulic <vladimir.mikulic2@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^26.2.2",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-nuke-dist": "^1.0.1"
+  },
+  "dependencies": {
+    "node-html-parser": "^1.2.20",
+    "prepend-file": "^2.0.0",
+    "replace-in-file": "^6.1.0"
+  }
+}
