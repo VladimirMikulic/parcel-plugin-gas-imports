@@ -27,7 +27,7 @@ describe('ImportsManager.js', () => {
     const entryFileSource = fs.readFileSync(entryFilePath, 'utf-8');
 
     for (const { fileName } of entryFileImports) {
-      const gasImport = `<?!= HtmlService.createTemplateFromFile(${fileName}).getRawContent() ?>`;
+      const gasImport = `<?!= HtmlService.createTemplateFromFile("${fileName}").getRawContent() ?>`;
       expect(entryFileSource.includes(gasImport)).toBe(true);
     }
   });
