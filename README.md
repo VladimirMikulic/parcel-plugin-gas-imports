@@ -23,6 +23,7 @@ Because of this, it won't apply any code transformation to those files and won't
 
 - 🚫 CSS not prefixed (The UI breaks on some browsers)
 - 🚫 JS not transpiled (Usage of modern JS not possible)
+- 🚫 Code can't be split in modules
 - 💣 Large file sizes (Code not minified)
 
 ## :package: Installation
@@ -75,6 +76,8 @@ dist
 ├── style.e308ff8e.css.html
 └── script.75da7f30.js.html
 ```
+
+> ℹ️ NOTE: If you want to prevent this plugin from running in certain cases you can set `PARCEL_PLUGIN_GAS_IMPORTS=false` environment variable.
 
 ## :sparkles: Run tests
 
