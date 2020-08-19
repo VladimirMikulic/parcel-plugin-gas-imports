@@ -4,7 +4,9 @@
   "description": "Parcel plugin that enables bundling of Google App Script HTML.",
   "main": "./lib/index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "parcel build test/example-src/index.html",
+    "posthtml": "posthtml -c .posthtmlrc test/example-src/index.html -o dist/index-a.html"
   },
   "keywords": [
     "gas",
@@ -20,10 +22,14 @@
   "devDependencies": {
     "jest": "^26.2.2",
     "parcel-bundler": "^1.12.4",
-    "parcel-plugin-nuke-dist": "^1.0.1"
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml": "^0.13.1"
   },
   "dependencies": {
+    "htmlnano": "^0.2.6",
     "node-html-parser": "^1.2.20",
+    "posthtml-cli": "^0.7.1",
+    "posthtml-custom-elements": "^1.1.2",
     "prepend-file": "^2.0.0",
     "replace-in-file": "^6.1.0"
   }

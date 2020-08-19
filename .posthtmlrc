@@ -1,0 +1,16 @@
+{
+  "options": {
+    "directives": [
+      {
+        "name": "?",
+        "start": "<",
+        "end": ">"
+      },
+      {
+        "name": "?=",
+        "start": "<",
+        "end": ">"
+      }
+    ]
+  }
+}
