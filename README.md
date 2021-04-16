@@ -6,6 +6,8 @@
 
 > 🔥 Parcel plugin that enables bundling of Google App Script HTML.
 
+_This is the plugin for Parcel v1. The plugin for the second version can be found [here](https://github.com/VladimirMikulic/parcel-reporter-gas-imports)._
+
 ## 📚 Introduction
 
 If you've ever developed an add-on for Google's Office Suite with Google Apps Script,
